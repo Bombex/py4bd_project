@@ -1,0 +1,3 @@
+opendatasets
+"weaviate-client==v4.4b2"
+python-dotenv
