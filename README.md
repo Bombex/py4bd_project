@@ -9,6 +9,17 @@ This application is developed using Streamlit and allows users to upload animal 
 
 ![Animal Species Search By Image app](AnimalSpeciesSearch.png)
 
+## 💻 Installation
+
+1. Install requirements
+```bash
+pip install -r requirements.txt
+```
+2. Create and fill in a .env file similar to .env_example
+3. Run streamlit app if you need
+```bash
+streamlit run st_species_search.py
+```
 
 ## 📚 Quickstart Guide 
 
