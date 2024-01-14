@@ -7,8 +7,7 @@ torch
 open_clip_torch
 argparse
 tqdm
-opencv-python
-opencv-python-headless
+opencv-python-headless==4.5.3.56
 matplotlib
 numpy
 streamlit-extras
