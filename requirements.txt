@@ -1,3 +1,15 @@
 opendatasets
-"weaviate-client==v4.4b2"
+weaviate-client
 python-dotenv
+streamlit
+Pillow
+torch
+open_clip_torch
+argparse
+tqdm
+opencv-python
+opencv-python-headless
+matplotlib
+numpy
+streamlit-extras
+urllib3>=2.0.2
