@@ -13,10 +13,17 @@ from streamlit_extras.app_logo import add_logo
 
 load_dotenv()
 
-WEAVIATE_URL = os.environ.get("WEAVIATE_URL")
-WEAVIATE_API_KEY = os.environ.get("WEAVIATE_API_KEY")
-WEAVIATE_COLLECTION = os.environ.get("WEAVIATE_COLLECTION")
-WEAVIATE_FIELDS = json.loads(os.environ.get("WEAVIATE_FIELDS"))
+use_streamlit_secrets = True
+if use_streamlit_secrets:
+    WEAVIATE_URL = st.secrets["WEAVIATE_URL"]
+    WEAVIATE_API_KEY = st.secrets["WEAVIATE_API_KEY"]
+    WEAVIATE_COLLECTION = st.secrets["WEAVIATE_COLLECTION"]
+    WEAVIATE_FIELDS = json.loads(st.secrets["WEAVIATE_FIELDS"])
+else:
+    WEAVIATE_URL = os.environ.get("WEAVIATE_URL")
+    WEAVIATE_API_KEY = os.environ.get("WEAVIATE_API_KEY")
+    WEAVIATE_COLLECTION = os.environ.get("WEAVIATE_COLLECTION")
+    WEAVIATE_FIELDS = json.loads(os.environ.get("WEAVIATE_FIELDS"))
 
 if WEAVIATE_API_KEY is None and WEAVIATE_API_KEY is None:
     st.error(
