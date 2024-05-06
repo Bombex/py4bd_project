@@ -23,7 +23,7 @@ streamlit run st_species_search.py
 
 ## 📚 Quickstart Guide 
 
-0. Go to our streamlit app running on the [Streamlit Community Cloud.](http://www.example.com)
+0. Go to our streamlit app running on the [Streamlit Community Cloud (_temporarily unavailable_)](http://localhost:8501/)
 1. Upload an image of the animal you are looking for.
 2. Select the number of similar animals to output in the result.
 3. Get a search result!
